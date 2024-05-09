@@ -7,9 +7,10 @@ import re
 
 
 def palindromo():
-    regex = r'\d+'
-    word = str(input("Informe uma palavra: "))    
+    regex = r'\d|\s+'
+    word = str(input("Informe uma palavra: "))
     word = re.sub(regex, '', word).upper()
+      
 
     if word == word[::-1]:
         print("O conteúdo informado é um palíndromo!")
