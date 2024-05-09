@@ -16,7 +16,7 @@ def mediaNotas():
                 media = (nota1 + nota2 + nota3) / 3
                 media = round(media)
                 
-                if media > 6:      
+                if media >= 6:      
                     print(f"Sua média foi de {media}")
                     print(f"Considerando a média geral como 6, você está APROVADO. Parabéns")
                 else:
